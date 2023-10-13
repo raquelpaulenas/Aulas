@@ -1,63 +1,115 @@
-#form
-{
-  position:relative;
-  left:37%;
-  top:29%;
-  width:320px;
-  height:270px;
-}
-#form #formulario
-{
-  position:absolute;
-  display:block;
-}
-fieldset
-{
-  width:300px;
-  height:250px;
-}
-legend{
-    font-style:bold;
-    font-family:"Segoe UI","Arial", "sans serif";
-}
-#formulario label{
-    position: absolute;
-    left: 19px;
-    margin-right: 5px;
-    }
-#formulario input.campo_nome
-    {
-      position:absolute;
-      left:95px;
-      top:23px;
-      width:225px;
-    }
-#formulario input.campo_email
-    {
-      position:absolute;
-      left:95px;
-      margin-top:2px;
-      width:225px;
-    }
-#formulario input.campo_tel
-    {
-      position:absolute;
-      left:95px;
-      margin-top:2px;
-      width:225px;
-    }
-#formulario input.campo_senha
-    {
-      position:absolute;
-      left:95px;
-      margin-top:2px;
-      width:225px;
-    }
-    #formulario input.btn_submit
-    {
-      border-style:dashed;
-      position:absolute;
-      bottom: 0.5em;
-      right:10px;
-      background-color
-    }      
+
+      
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #e3b39c;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #000000;
+            font: small-caps bold 14px/1 sans-serif;
+            background-color: #93b39e;
+
+        }
+        * { margin: 0; padding: 0; }
+        .slider {
+            display: block;
+            height: 293px;
+            width: 600px;
+            margin: auto;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .slider li {
+            list-style: none;
+            position: absolute;
+        }
+
+        .slider img {
+            margin: auto;
+            height: 100%;
+            width: 100%;
+            vertical-align: top;
+        }
+
+        .slider input {
+            display: none;
+        }
+
+        .slider label {
+            background-color: #000;
+            bottom: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: flex-end;
+            height: 10px;
+            position: absolute;
+            width: 10px;
+            z-index: 10;
+        }
+
+        .slider li:nth-child(1) label {
+            left: 10px;
+        }
+
+        .slider li:nth-child(2) label {
+            left: 40px;
+        }
+        
+        
+        .slider li input:checked ~ img {
+            opacity: 1;
+            visibility: visible;
+            z-index: 10;
+        }
+
+        .topo {
+            position: relative;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .topo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #mapa {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            background-color: #f9f9f9;
+        }
+        #texto_principal {
+            display:flex;
+            align-items: center;
+            flex-direction: column;
+
+        }
