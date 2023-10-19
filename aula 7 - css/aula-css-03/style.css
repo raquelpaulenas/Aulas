@@ -10,28 +10,45 @@ header {
   justify-content: space-between;
   padding: 16px;
   margin-bottom: 16px;
-  text-decoration: none;
-  text-decoration-line: none;
+}
+
+body{
+  background-color: #731294 ;
 }
 
 nav {
-  background-color: #EF7D19;
-  text-decoration-line: none;
-  text-decoration: none;
+  /* background-color: #EF7D19; */
 }
 
 ul {
   display: flex;
   height: 100%;
   align-items: center;
-  text-decoration-line: none;
-  text-decoration: none;
- 
 }
 
 nav ul li {
   padding-left: 16px;
   list-style-type: none;
-  text-decoration: none;
-  text-decoration-line: none;
 }
+
+a{
+  text-decoration: none;
+}
+
+main{
+  background-color: #731294;
+}
+
+section{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+section div {
+  background-image: url(/img/bg_laranja.jpg);
+  margin: 16px;
+  padding: 12px;
+  
+}
+
